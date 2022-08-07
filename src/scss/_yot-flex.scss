@@ -1,0 +1,141 @@
+// Flex
+.yot-flex{
+    display: flex;
+
+    // Single
+    // flex-direction 
+    &-fd-c{
+        flex-direction: column;
+    }
+
+    &-fd-cr{
+        flex-direction: column-reverse;
+    }
+
+    &-fd-r{
+        flex-direction: row;
+    }
+
+    &-fd-rr{
+        flex-direction: row-reverse;
+    }
+
+    // flex-wrap
+    &-fw-w{
+        flex-wrap: wrap;
+    }
+
+    &-fw-wr{
+        flex-wrap: wrap-reverse;
+    }
+
+    &-fw-wr{
+        flex-flow: row wrap;
+    }
+
+    // justify-content
+    &-jc-c{
+        justify-content: center;
+    }
+
+    &-jc-fs{
+        justify-content: flex-start;
+    }
+
+    &-jc-fe{
+        justify-content: flex-end;
+    }
+
+    &-jc-sa{
+        justify-content: space-around;
+    }
+
+    &-jc-sb{
+        justify-content: space-between;
+    }
+
+    // align-items
+    &-ai-c{ 
+        align-items: center;
+    }
+
+    &-ai-fs{ 
+        align-items: flex-start;
+    }
+
+    &-ai-fe{ 
+        align-items: flex-end;
+    }
+
+    &-ai-s{ 
+        align-items: stretch;
+    }
+
+    &-ai-bl{ 
+        align-items: baseline;
+    }
+
+    // Combo
+    &-fd-c-ai-c-jc-sb{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-fd-rr-ai-c{
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    &-ai-c-jc-c{ // Center Div
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-ai-c-jc-sb{ // 
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-ai-c-jc-se{ // 
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    &-fd-c-ai-c{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-fd-c-c{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-fd-c-ai-c-jc-c{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-fd-c-ai-c-jc-e{
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+    }
+
+    &-fd-c-ai-e{
+        flex-direction: column;
+        align-items: end;
+    }
+
+    &-ai-c-jc-e{
+        align-items: center;
+        justify-content: end;
+    }
+
+    &-ai-c-jc-sa{
+        align-items: center;
+        justify-content: space-around;
+    }
+}

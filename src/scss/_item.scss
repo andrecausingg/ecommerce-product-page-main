@@ -1,0 +1,54 @@
+.item-image-container{
+    position: relative;
+}
+
+.item-pn-icon-container{
+    background-color: $yot-white;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-prev-next-icon{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+
+    img{
+        width: 14px;
+        height: 14px;
+    }
+}
+
+
+// Description
+.item-description-container{
+    position: relative;
+    margin-top: -40px;
+    padding: 24px 24px 0px;
+
+    .item-percent{
+        background-color: #FDEDE0;
+        padding: 6px;
+        border-radius: 5px;
+    }
+
+    h2{
+        margin: 16px 0px;
+    }
+}
+
+// Increment Decrement
+.item-dec-inc-container{
+    padding: 16px;
+    background-color: #F7F8FD;
+}

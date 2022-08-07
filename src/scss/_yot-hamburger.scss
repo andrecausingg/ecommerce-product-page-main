@@ -1,0 +1,33 @@
+.yot-hamburger{  
+    cursor: pointer;
+
+    span{
+        display: block;
+        width: 25px;
+        height: 5px;
+        background-color: $yot-dark-grayish-blue;
+        margin-bottom: 3px;
+        transition: all 300ms ease-in-out;
+        transform-origin: left center;
+    }
+
+    span:last-child{
+        margin-bottom: 0;
+    }
+}
+
+.yot-hamburger-open{
+    span:first-child {
+        transform: rotate(45deg);
+    }
+
+    span:nth-child(2){
+        opacity: 0;
+    }
+
+    span:last-child {
+        transform: rotate(-45deg);
+        margin-top: 5px;
+    }
+}
+

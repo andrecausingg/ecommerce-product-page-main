@@ -1,0 +1,24 @@
+.yot-hero{
+    width: 100%;
+    display:inline-block;
+
+    // background-image: url('/src/images/mobile/image-header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 33.875rem;
+
+    &-title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h1{
+            font-family: 'Fraunces', serif;
+            color: $yot-white;
+            text-align: center;
+            letter-spacing: 3px;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+// Visibility Hide on Mobile
+.yot-hide-for-mobile {
+    @include breakpoint-down(large-laptop) {
+        display: none !important;
+    }
+}
+  
+// Visibility Hide on Desktop
+.yot-hide-for-desktop {
+    @include breakpoint-up(large-laptop) {
+        display: none !important;
+    }
+}
+

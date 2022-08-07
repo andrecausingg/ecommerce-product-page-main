@@ -1,0 +1,41 @@
+/* 576px */
+@media only screen and (min-width: 36em){  /* Small devices (portrait tablets and large phones)*/
+
+}
+                                /* 768px */
+@media only screen and (min-width: 48em){ /* Medium devices (landscape tablets) */
+
+}
+
+                                /* 992px */
+@media only screen and (min-width: 62em){ /* Large devices (laptops/desktops) */
+    // Header.Js
+    .nav-avatar{
+        width: 36px !important;
+        height: 36px !important;
+    }
+
+    // Item js
+    .item-image-container{
+        margin: 80px 48px 0px;
+    }
+    
+    .item-main-product{
+        img{
+            border-radius: 25px !important;
+        }
+    }
+
+    .item-description-container{
+        margin-left: 48px;
+    }
+}
+
+                                /* 1200px */
+@media only screen and (min-width: 75em){  /* Extra large devices (large laptops and desktops, 1200px and up) */
+
+}
+                                /* 1400px */
+@media only screen and (min-width: 87.5em){ /* Tv */
+
+}

@@ -1,0 +1,16 @@
+.yot-header{
+    position: fixed;
+    top:0;
+    width: 100%;
+}
+
+.nav-links{
+    li{
+        display: inline;
+    }
+
+    span:hover{
+        color: $yot-black;
+        border-bottom: 3px solid $yot-orange;
+    }
+}

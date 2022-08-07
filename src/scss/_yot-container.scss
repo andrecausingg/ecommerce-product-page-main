@@ -1,0 +1,66 @@
+// 576px,                   768px,                  992px,                  1200px,                   1400px
+// 36em,                    48em,                   62em,                   75em,                     87.5em
+// small-mobile,            medium-tablet,          large-laptop,           xlarge-desktop,           xxlarge-tv
+$breakpoints-up: ("small-mobile": "36em", "medium-tablet": "48em",  "large-laptop": "62em", "xlarge-desktop": "75em", "xxlarge-tv": "87.5em");
+@mixin breakpoint-up($size){
+    @media (min-width: map-get($breakpoints-up, $size)){
+        @content;
+    }
+}
+
+                    // 575px,              767px,                  991px,                1199px,                 1399px
+                    // 35.9375em,          47.9375em,              61.9375em,            75em,                   87.437em
+                    // small-mobile,            medium-tablet,          large-laptop,           xlarge-desktop,           xxlarge-tv
+$breakpoints-down: ("small-mobile": "35.9375em", "medium-tablet": "47.9375em", "large-laptop": "61.9375em", "xlarge-desktop": "74.9375em", "xxlarge-tv": "87.4375em");
+@mixin breakpoint-down($size){
+    @media (max-width: map-get($breakpoints-down, $size)){
+        @content;
+    }
+}
+
+// Containers
+// 576px,                   768px,                  992px,                  1200px,                   1400px
+// 36em,                    48em,                   62em,                   75em,                     87.5em
+// small,                   medium,                 large,                  xlarge,                   xxlarge
+// mobile,                  tablet,                 laptop,                 Desktop,                  Tv
+.yot-container{ 
+    width: 100%;
+    padding-right: 1.25rem !important;  /* 36px */
+    padding-left: 1.25rem !important;  /* 36px */
+    margin: auto auto;
+}
+
+.yot-container{
+    @include breakpoint-up(small-mobile){ // mobile, small, 36em, 576px,
+        max-width: 540px;
+        margin: auto auto;
+    }
+}
+
+.yot-container{
+    @include breakpoint-up(medium-tablet){ // tablet, medium, 48em, 768px
+        max-width: 720px;
+        margin: auto auto;
+    }
+}
+
+.yot-container{
+    @include breakpoint-up(large-laptop){ // laptop, large, 62em, 992px
+        max-width: 960px;
+        margin: auto auto;
+    }
+}
+
+.yot-container{
+    @include breakpoint-up(xlarge-desktop){ // Desktop, xlarge, 75em, 1200px
+        max-width: 1040px;
+        margin: auto auto;
+    }
+}
+
+.yot-container{
+    @include breakpoint-up(xxlarge-tv){ // Tv, xxlarge, 87.5em, 1400px
+        max-width: 1320px;
+        margin: auto auto;
+    }
+}
